@@ -3,11 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Determines if a number is positive, negative or zero.
  *
- * Description: false or true validation
- *
- * Return : 0 (Success)
+ * Return: 0 (Success)
 */
 
 int main(void)
@@ -20,7 +18,7 @@ int main(void)
 		printf("%i is positive\n", n);
 	else if (n == 0)
 		printf("%i is zero\n", n);
-	else
+	elsie
 		printf("%i is negative\n", n);
 
 	return (0);
