@@ -1,16 +1,25 @@
 #include "main.h"
+
 /**
- * _isalpha - Checks charcter
- * @c: The charceter
+ * print_sign - Printys sum
+ * @n: The nmber
  * Return: 1 for all
  */
-
-int _isalpha(int c)
-
+int print_sign(int n)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if (n > 0)
 	{
+		_putchar(43);
 		return (1);
 	}
-	return (0);
+	else if (n < 0)
+	{
+		_putchar(45);
+		return (-1);
+	}
+	else
+	{
+		_putchar(48);
+		return (0);
+	}
 }
