@@ -1,11 +1,15 @@
 #include "main.h"
 
 /**
- * main - check the code
- * Return: Always 0.
- */
-int main(void)
+ * print_alphabet - utilizes on the _putchar function to print
+ *			all alphapet a - z
+*/
+
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+	_puychar(ch);
+	_putchar('\n');
 }
