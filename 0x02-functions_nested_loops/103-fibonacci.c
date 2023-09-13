@@ -22,6 +22,7 @@ int main(void)
 		j = k - j;
 		++i;
 	}
+	printf("\n");
 	printf("%ld", sum);
 	return (0);
 }
