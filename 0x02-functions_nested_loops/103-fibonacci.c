@@ -10,19 +10,21 @@
 
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2, sum = k;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	float total_sum;
 
-
-	while (k + j < 4000000)
+	while (1)
 	{
-		k += j;
-		if (k % 2 == 0)
-		sum += k;
-		j = k - j;
-		++i;
+		sum = fib1 + fib2;
+
+		if (sum > 4000000)
+			break;
+		if ((sum % 2) == 0)
+			total_sum += sum;
+
+		fib1 = fib2;
+		fib2 = sum;
 	}
-	printf("\n");
-	printf("%ld", sum);
+	printf("%.0f\n", total_ sum);
 	return (0);
 }
