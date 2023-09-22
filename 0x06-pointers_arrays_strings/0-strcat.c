@@ -13,18 +13,23 @@
 char *_strcat(char *dest, char *src)
 
 {
+int k, r;
 
-int destlen = 0;
-int srclen = 0;
-int i;
-for (i = 0; dest[i] != '\0' ; i++)
-	destlen++
-for (i = 0; rc[i] != '\0'; i++)
-	srclen++;
+k = 0;
 
-for (i = 0; i <= scrlen; i++)
+r = 0;
+
+while (dest[k] != '\0')
 {
-	dest[destlen + i] = src[i];
+k++;
 }
+while (src[r] != '\0')
+{
+dest[k] = src[r];
+k++;
+r++;
+}
+
+dest[k] = '\0';
 return (dest);
 }
