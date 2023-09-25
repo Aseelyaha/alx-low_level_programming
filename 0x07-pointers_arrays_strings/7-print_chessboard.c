@@ -1,33 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-  * print_diagsums - main function
+  * print_chessboard - main function
   *
-  * @size: function parameter
-  *
-  * @a: function parameter
+  * @a: function parameter declared
   *
   * Return: Always 0.
 */
 
-void print_diagsums(int *a, int size)
+void print_chessboard(char (*a)[8])
 {
-int count1;
-int count2;
-int x;
-count1 = 0;
-count2 = 0;
+int k;
+int r;
 
-for (x = 0; x < size; x++)
+for (k = 0; k < 8; k++)
 {
-count1 = count1 + a[x * size + x];
+for (r = 0; r < 8; r++)
+_putchar(a[k][r]);
+_putchar('\n');
 }
-
-for (x = size - 1; x >= 0; x--)
-{
-count2 += a[x * size + (size - x - 1)];
-}
-
-printf("%d, %d\n", count1, count2);
 }
