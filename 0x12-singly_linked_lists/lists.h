@@ -1,7 +1,7 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef LINKED
+#define LINKED
 
-#include <stdio.h>
+#include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -17,9 +17,9 @@
 
 typedef struct list_s
 {
-	char *str
-	unsigned int len;
-	struct lists_s *next;
+char *str
+unsigned int len;
+struct lists_s *next;
 } list_t;
 
 int _putchar(char c);
