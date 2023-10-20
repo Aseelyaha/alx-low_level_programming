@@ -1,5 +1,5 @@
-#ifndf LINKED
-#define LINKED
+#ifndef LISTS_H_
+#define LISTS_H_
 
 #include <stddef.h>
 #include <stdlib.h>
@@ -13,7 +13,7 @@
  *      *
  *       * Description: singly linked list node structure
  *        * for Holberton project
- *         */
+*/
 
 typedef struct list_s
 {
