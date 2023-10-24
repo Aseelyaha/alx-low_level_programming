@@ -13,11 +13,11 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *tmp, *tmp2;
 	unsigned int count = 0;
 	
-        if (head == NULL)
+	if (head == NULL)
 		exit (98);
 	tmp = head;
 	if (tmp == 0)
-		return (1);
+		return (0);
 
 	while (tmp != 0)
 	{
