@@ -1,8 +1,3 @@
-/*
- * File: 4-free_dlistint.c
- * Auth: Brennan D Baraban
- */
-
 #include "lists.h"
 
 /**
