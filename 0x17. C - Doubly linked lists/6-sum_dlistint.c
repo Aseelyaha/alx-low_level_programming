@@ -1,8 +1,3 @@
-/*
- * File: 6-sum_dlistint.c
- * Auth: Brennan D Baraban
- */
-
 #include "lists.h"
 
 /**
